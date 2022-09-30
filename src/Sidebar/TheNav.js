@@ -48,7 +48,7 @@ function TheNav() {
   return (
     <nav>
       {navItems.map(({ classes, icon, label }) => (
-        <NavItem key={navItem.label} classes={classes} icon={icon}>
+        <NavItem key={label} classes={classes} icon={icon}>
           {label}
         </NavItem>
       ))}
