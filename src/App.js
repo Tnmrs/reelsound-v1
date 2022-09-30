@@ -4,15 +4,15 @@ function App() {
     <React.Fragment>
       {/* Sidebar */}
 
-      <div class="flex flex-grow overflow-auto">
+      <div className="flex flex-grow overflow-auto">
         <aside
           id="sidebar"
-          class="bg-[#4ade80]  w-[256px] text-[#ffffffd3] overflow-hidden flex flex-col fixed lg:sticky 
+          className="bg-[#4ade80]  w-[256px] text-[#ffffffd3] overflow-hidden flex flex-col fixed lg:sticky 
     top-0 z-30 h-screen lg:h-auto -translate-x-full target:translate-x-0 lg:translate-x-0 transition-transform peer">
           {/* Logo  */}
 
-          <a href="." class="text-white inline-block my-6 px-6 w-full">
-            <svg viewBox="0 0 1134 340" class="w-[130px]">
+          <a href="." className="text-white inline-block my-6 px-6 w-full">
+            <svg viewBox="0 0 1134 340" className="w-[130px]">
               <title>Spotify</title>
               <path
                 fill="currentColor"
@@ -23,113 +23,113 @@ function App() {
           <nav>
             <a
               href="."
-              class="flex items-center text-white bg-gradient-to-l from-[#4ade80] to-[#3b82f6] mx-2 px-4 py-2 rounded">
+              className="flex items-center text-white bg-gradient-to-l from-[#4ade80] to-[#3b82f6] mx-2 px-4 py-2 rounded">
               {/* Home */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                 />
               </svg>
 
-              <span class="ml-4 text-sm font-semibold">Home</span>
+              <span className="ml-4 text-sm font-semibold">Home</span>
             </a>
 
             {/* Search */}
             <a
               href="."
-              class="flex items-center hover:text-white mx-2 px-4 py-2 rounded duration-300">
+              className="flex items-center hover:text-white mx-2 px-4 py-2 rounded duration-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                 />
               </svg>
-              <span class="ml-4 text-sm font-semibold">Search</span>
+              <span className="ml-4 text-sm font-semibold">Search</span>
             </a>
             {/* Your Library */}
             <a
               href="."
-              class="flex items-center hover:text-white mx-2 px-4 py-2 rounded duration-300 mb-6">
+              className="flex items-center hover:text-white mx-2 px-4 py-2 rounded duration-300 mb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
                 />
               </svg>
-              <span class="ml-4 text-sm font-semibold">Your Library</span>
+              <span className="ml-4 text-sm font-semibold">Your Library</span>
             </a>
 
             {/* Create Playlist */}
             <a
               href="."
-              class="flex items-center hover:text-white mx-2 px-4 py-2 rounded duration-300">
+              className="flex items-center hover:text-white mx-2 px-4 py-2 rounded duration-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <span class="ml-4 text-sm font-semibold">Create Playlist</span>
+              <span className="ml-4 text-sm font-semibold">Create Playlist</span>
             </a>
 
             {/* Favorited Songs  */}
             <a
               href="."
-              class="flex items-center hover:text-white mx-2 px-4 py-2 rounded duration-300">
+              className="flex items-center hover:text-white mx-2 px-4 py-2 rounded duration-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                 />
               </svg>
-              <span class="ml-4 text-sm font-semibold">Favorited Songs</span>
+              <span className="ml-4 text-sm font-semibold">Favorited Songs</span>
             </a>
           </nav>
-          <footer class="mt-auto mb-8 ml-6">
+          <footer className="mt-auto mb-8 ml-6">
             <ul>
               <li>
-                <a href="." class="text-[11px] hover:underline py-2">
+                <a href="." className="text-[11px] hover:underline py-2">
                   Cookies
                 </a>
               </li>
               <li>
-                <a href="." class="text-[11px] hover:underline py-2">
+                <a href="." className="text-[11px] hover:underline py-2">
                   Privacy
                 </a>
               </li>
@@ -138,52 +138,55 @@ function App() {
         </aside>
 
         <a
-          href="#"
-          class="fixed inset-0 bg-[black] opacity-0 peer-target:opacity-50 pointer-events-none peer-target:pointer-events-auto z-20 lg:hidden cursor-default transition-opacity"></a>
-        <div class="flex-1 overflow-auto">
-          <header class="bg-[#070707] flex-1 flex justify-between items-center py-[10px] px-[13px] sm:px-[32px] sticky top-0 z-10">
-            <div class="flex">
-              <a href="#sidebar" class="mr-[8px] text-[#969696] p-1 -ml-1.5 inline-block lg:hidden">
+          href="/"
+          className="fixed inset-0 bg-[black] opacity-0 peer-target:opacity-50 pointer-events-none peer-target:pointer-events-auto z-20 lg:hidden cursor-default transition-opacity"></a>
+
+        <div className="flex-1 overflow-auto">
+          <header className="bg-[#070707] flex-1 flex justify-between items-center py-[10px] px-[13px] sm:px-[32px] sticky top-0 z-10">
+            <div className="flex">
+              <a
+                href="#sidebar"
+                className="mr-[8px] text-[#969696] p-1 -ml-1.5 inline-block lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M4 6h16M4 12h16M4 18h16"
                   />
                 </svg>
               </a>
-              <a href="#" class="mr-[8px] text-[#969696] p-1 cursor-not-allowed">
+              <a href="/" className="mr-[8px] text-[#969696] p-1 cursor-not-allowed">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M15 19l-7-7 7-7"
                   />
                 </svg>
               </a>
-              <a href="#" class="ml-[8px] text-[#969696] p-1 cursor-not-allowed">
+              <a href="/" className="ml-[8px] text-[#969696] p-1 cursor-not-allowed">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M9 5l7 7-7 7"
                   />
                 </svg>
@@ -191,854 +194,1027 @@ function App() {
             </div>
             <div>
               {/* Button header */}
-              <button class="text-white text-xs font-semibold leading-5 tracking-widest uppercase py-[9px] px-[17px] sm:px-[38px] rounded-full hover:scale-105">
+              <button className="text-white text-xs font-semibold leading-5 tracking-widest uppercase py-[9px] px-[17px] sm:px-[38px] rounded-full hover:scale-105">
                 Sign Up
               </button>
-              <button class="bg-gradient-to-r bg-[#4ade80] hover:from-green-400 hover:to-blue-500 text-[#ffffff] text-xs font-semibold leading-5 tracking-widest uppercase py-[9px] px-[17px] sm:px-[38px] rounded-full hover:scale-105">
+              <button className="bg-gradient-to-r bg-[#4ade80] hover:from-green-400 hover:to-blue-500 text-[#ffffff] text-xs font-semibold leading-5 tracking-widest uppercase py-[9px] px-[17px] sm:px-[38px] rounded-full hover:scale-105">
                 Log In
               </button>
             </div>
           </header>
-          <main class="text-white relative">
-            <div class="h-[275px] bg-gradient-to-b from-[#1f1f1f] to-[#121212] absolute w-full"></div>
-            <div class="relative pt-[24px] pb-[48px] px-[32px] space-y-9 max-w-screen-5xl">
+          <main className="text-white relative">
+            <div className="bg-gradient-to-b from-[#000000ea] to-[#121212] absolute w-full h-full"></div>
+            <div className="relative pt-[24px] pb-[48px] px-[32px] space-y-9 max-w-screen-5xl">
               <div>
-                <div class="flex flex-wrap justify-between items-end gap-x-6 mb-[18px]">
+                <div className="flex flex-wrap justify-between items-end gap-x-6 mb-[18px]">
                   <div>
-                    <h2 class="text-2xl font-semibold hover:underline capitalize">
-                      <a href="#">Good Morning</a>
+                    <h2 className="text-2xl font-semibold hover:underline capitalize">
+                      <a href="/">Good Morning</a>
                     </h2>
                   </div>
                   <a
-                    href="#"
-                    class="uppercase text-xs font-semibold tracking-widest hover:underline text-[#b3b3b3] leading-6">
+                    href="/"
+                    className="uppercase text-xs font-semibold tracking-widest hover:underline text-[#b3b3b3] leading-6">
                     See all
                   </a>
                 </div>
 
-                <div class="grid sm:grid-cols-playlists-mobile md:grid-cols-playlists-tablet lg:grid-cols-playlists-desktop gap-5">
+                <div className="grid sm:grid-cols-playlists-mobile md:grid-cols-playlists-tablet lg:grid-cols-playlists-desktop gap-5">
                   <a
-                    href="#"
-                    class="relative p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/7f1d1d/fff?text=Coverfont=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="relative p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/7f1d1d/fff?text=Coverfont=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
-                    <ul class="absolute top-9 left-9 bg-[#282828] text-[#eaeaea] text-sm divide-y divide-[#3e3e3e] p-1 rounded shadow-xl cursor-default whitespace-nowrap z-10 hidden group-hover:block">
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <ul className="absolute top-9 left-9 bg-[#282828] text-[#eaeaea] text-sm divide-y divide-[#3e3e3e] p-1 rounded shadow-xl cursor-default whitespace-nowrap z-10 hidden group-hover:block">
                       <li>
-                        <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                        <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                           Add to Your Library
                         </button>
                       </li>
-                      <li class="relative">
-                        <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default flex justify-between items-center">
+                      <li className="relative">
+                        <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default flex justify-between items-center">
                           Share
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-4 w-4"
+                            className="h-4 w-4"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
                               d="M9 5l7 7-7 7"
                             />
                           </svg>
                         </button>
-                        <ul class="absolute top-0 left-full bg-[#282828] text-[#eaeaea] text-sm p-1 rounded shadow-xl cursor-default">
+                        <ul className="absolute top-0 left-full bg-[#282828] text-[#eaeaea] text-sm p-1 rounded shadow-xl cursor-default">
                           <li>
-                            <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                            <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                               Copy link to playlist
                             </button>
                           </li>
                           <li>
-                            <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                            <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                               Embed playlist
                             </button>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                        <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                           About recommendations
                         </button>
                       </li>
                       <li>
-                        <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                        <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                           Open in Desktop app
                         </button>
                       </li>
                     </ul>
                   </a>
+
+                  {/* Playlist */}
+
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden sm:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden sm:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                  </a>
+
+                  {/* Playlist */}
+                  <a
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden lg:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                  </a>
+
+                  {/* Playlist */}
+                  <a
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                  </a>
+
+                  {/* Playlist */}
+                  <a
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 2xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                  </a>
+
+                  {/* Playlist */}
+                  <a
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 3xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden lg:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 4xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 5xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 2xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 6xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
-                  </a>
-                  <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 3xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5l7 7-7 7"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
-                  </a>
-                  <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 4xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5l7 7-7 7"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
-                  </a>
-                  <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 5xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5l7 7-7 7"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
-                  </a>
-                  <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 6xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5l7 7-7 7"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                 </div>
               </div>
               <div>
-                <div class="flex flex-wrap justify-between items-end gap-x-6 mb-[18px]">
+                <div className="flex flex-wrap justify-between items-end gap-x-6 mb-[18px]">
                   <div>
-                    <h2 class="text-2xl font-semibold hover:underline capitalize">
-                      <a href="#">Your best mix </a>
+                    <h2 className="text-2xl font-semibold hover:underline capitalize">
+                      <a href="/">Your best mix </a>
                     </h2>
-                    <p class="text-sm text-[#b3b3b3]">Best dance novelties.</p>
+                    <p className="text-sm text-[#b3b3b3]">...</p>
                   </div>
                   <a
-                    href="#"
-                    class="uppercase text-xs font-semibold tracking-widest hover:underline text-[#b3b3b3] leading-6">
+                    href="/"
+                    className="uppercase text-xs font-semibold tracking-widest hover:underline text-[#b3b3b3] leading-6">
                     See all
                   </a>
                 </div>
-                <div class="grid sm:grid-cols-playlists-mobile md:grid-cols-playlists-tablet lg:grid-cols-playlists-desktop gap-5">
+                <div className="grid sm:grid-cols-playlists-mobile md:grid-cols-playlists-tablet lg:grid-cols-playlists-desktop gap-5">
                   <a
-                    href="#"
-                    class="relative p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="relative p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
-                    <ul class="absolute top-9 left-9 bg-[#282828] text-[#eaeaea] text-sm divide-y divide-[#3e3e3e] p-1 rounded shadow-xl cursor-default whitespace-nowrap z-10 hidden group-hover:block">
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <ul className="absolute top-9 left-9 bg-[#282828] text-[#eaeaea] text-sm divide-y divide-[#3e3e3e] p-1 rounded shadow-xl cursor-default whitespace-nowrap z-10 hidden group-hover:block">
                       <li>
-                        <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                        <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                           Add to Your Library
                         </button>
                       </li>
-                      <li class="relative">
-                        <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default flex justify-between items-center">
+                      <li className="relative">
+                        <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default flex justify-between items-center">
                           Share
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-4 w-4"
+                            className="h-4 w-4"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
                               d="M9 5l7 7-7 7"
                             />
                           </svg>
                         </button>
-                        <ul class="absolute top-0 left-full bg-[#282828] text-[#eaeaea] text-sm p-1 rounded shadow-xl cursor-default">
+                        <ul className="absolute top-0 left-full bg-[#282828] text-[#eaeaea] text-sm p-1 rounded shadow-xl cursor-default">
                           <li>
-                            <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                            <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                               Copy link to playlist
                             </button>
                           </li>
                           <li>
-                            <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                            <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                               Embed playlist
                             </button>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                        <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                           About recommendations
                         </button>
                       </li>
                       <li>
-                        <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                        <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                           Open in Desktop app
                         </button>
                       </li>
                     </ul>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden sm:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden sm:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden lg:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden lg:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 2xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 2xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 3xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 3xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 4xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 4xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 5xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 5xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 6xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 6xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                 </div>
               </div>
               <div>
-                <div class="flex flex-wrap justify-between items-end gap-x-6 mb-[18px]">
+                <div className="flex flex-wrap justify-between items-end gap-x-6 mb-[18px]">
                   <div>
-                    <h2 class="text-2xl font-semibold hover:underline capitalize">
-                      <a href="#">Lorem ipsum</a>
+                    <h2 className="text-2xl font-semibold hover:underline capitalize">
+                      <a href="/">Recently played</a>
                     </h2>
-                    <p class="text-sm text-[#b3b3b3]">Lorem ipsum dolor sit.</p>
+                    <p className="text-sm text-[#b3b3b3]">...</p>
                   </div>
                   <a
-                    href="#"
-                    class="uppercase text-xs font-semibold tracking-widest hover:underline text-[#b3b3b3] leading-6">
+                    href="/"
+                    className="uppercase text-xs font-semibold tracking-widest hover:underline text-[#b3b3b3] leading-6">
                     See all
                   </a>
                 </div>
-                <div class="grid sm:grid-cols-playlists-mobile md:grid-cols-playlists-tablet lg:grid-cols-playlists-desktop gap-5">
+                <div className="grid sm:grid-cols-playlists-mobile md:grid-cols-playlists-tablet lg:grid-cols-playlists-desktop gap-5">
                   <a
-                    href="#"
-                    class="relative p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="relative p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
-                    <ul class="absolute top-9 left-9 bg-[#282828] text-[#eaeaea] text-sm divide-y divide-[#3e3e3e] p-1 rounded shadow-xl cursor-default whitespace-nowrap z-10 hidden group-hover:block">
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <ul className="absolute top-9 left-9 bg-[#282828] text-[#eaeaea] text-sm divide-y divide-[#3e3e3e] p-1 rounded shadow-xl cursor-default whitespace-nowrap z-10 hidden group-hover:block">
                       <li>
-                        <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                        <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                           Add to Your Library
                         </button>
                       </li>
-                      <li class="relative">
-                        <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default flex justify-between items-center">
+                      <li className="relative">
+                        <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default flex justify-between items-center">
                           Share
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-4 w-4"
+                            className="h-4 w-4"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
                               d="M9 5l7 7-7 7"
                             />
                           </svg>
                         </button>
-                        <ul class="absolute top-0 left-full bg-[#282828] text-[#eaeaea] text-sm p-1 rounded shadow-xl cursor-default">
+                        <ul className="absolute top-0 left-full bg-[#282828] text-[#eaeaea] text-sm p-1 rounded shadow-xl cursor-default">
                           <li>
-                            <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                            <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                               Copy link to playlist
                             </button>
                           </li>
                           <li>
-                            <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                            <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                               Embed playlist
                             </button>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                        <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                           About recommendations
                         </button>
                       </li>
                       <li>
-                        <button class="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
+                        <button className="w-full p-3 text-left hover:text-white hover:bg-[#3e3e3e] cursor-default">
                           Open in Desktop app
                         </button>
                       </li>
                     </ul>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden sm:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden sm:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden lg:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden lg:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 2xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 2xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 3xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 3xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 4xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 4xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 5xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 5xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                   <a
-                    href="#"
-                    class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 6xl:block">
-                    <div class="relative">
-                      {/* <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" class="rounded shadow-lg"> */}
-                      <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                    href="/"
+                    className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 6xl:block">
+                    <div className="relative">
+                      <img
+                        src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster"
+                        className="rounded shadow-lg"
+                        alt=""
+                      />
+                      <button className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
+                          className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
                       </button>
                     </div>
-                    <h3 class="mt-4 mb-1 font-semibold tracking-wide capitalize">Playlist title</h3>
-                    <p class="text-sm text-[#b3b3b3] line-clamp-2">1</p>
+                    <h3 className="mt-4 mb-1 font-semibold tracking-wide capitalize">
+                      Playlist title
+                    </h3>
+                    <p className="text-sm text-[#b3b3b3] line-clamp-2">1</p>
                   </a>
                 </div>
               </div>
@@ -1050,15 +1226,15 @@ function App() {
       {/* footer */}
 
       <a
-        href="#"
-        class="bg-gradient-to-l from-[#4ade80] to-[#3b82f6] text-white py-4 px-8 flex justify-between items-center flex-wrap gap-x-6 gap-y-2">
+        href="/"
+        className="bg-gradient-to-l from-[#4ade80] to-[#3b82f6] text-white py-4 px-8 flex justify-between items-center flex-wrap gap-x-6 gap-y-2">
         <div>
-          <p class="text-xs uppercase tracking-wider mb-1">Preview of Spotify</p>
-          <p class="leading-6 text-[14px] tracking-wide">
+          <p className="text-xs uppercase tracking-wider mb-1">Preview of Spotify</p>
+          <p className="leading-6 text-[14px] tracking-wide">
             Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.
           </p>
         </div>
-        <button class="bg-[#3b82f6] text-[#ffffff] text-[14px] font-semibold leading-5 tracking-widest uppercase py-[9px] px-[48px] rounded-full hover:scale-105">
+        <button className="bg-[#3b82f6] text-[#ffffff] text-[14px] font-semibold leading-5 tracking-widest uppercase py-[9px] px-[48px] rounded-full hover:scale-105">
           Sign up free
         </button>
       </a>
