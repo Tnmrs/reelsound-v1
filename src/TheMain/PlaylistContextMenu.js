@@ -1,5 +1,4 @@
 import PlaylistContextMenuItem from './PlaylistContextMenuItem';
-import PlaylistContextSubmenu from './PlaylistContextSubmenu';
 
 const menuItems = [
   {
