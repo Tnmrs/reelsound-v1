@@ -16,31 +16,31 @@ const navItems = [
   {
     label: 'Home',
     classes: activeNavItemsClasses,
-    icon: <HomeIcon className="h-6 w-6" />,
+    icon: <HomeIcon className="h-6 w-8" />,
   },
 
   {
     label: 'Search',
     classes: navItemClasses,
-    icon: <SearchIcon className="h-6 w-6" />,
+    icon: <SearchIcon className="h-6 w-8" />,
   },
 
   {
     label: 'Your Library',
     classes: `${navItemClasses} mb-6`,
-    icon: <ViewBoardsIcon className="h-6 w-6" />,
+    icon: <ViewBoardsIcon className="h-6 w-8" />,
   },
 
   {
     label: 'Create Playlist',
     classes: navItemClasses,
-    icon: <PlusCircleIcon className="h-6 w-6" />,
+    icon: <PlusCircleIcon className="h-6 w-8" />,
   },
 
   {
     label: 'Favorited Songs',
     classes: navItemClasses,
-    icon: <HeartIcon className="h-6 w-6" />,
+    icon: <HeartIcon className="h-6 w-8" />,
   },
 ];
 

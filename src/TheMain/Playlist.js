@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import PlaylistButtonPlay from './PlaylistButtonPlay';
 import PlaylistContextMenu from './PlaylistContextMenu';
 import PlaylistCover from './PlaylistCover';
@@ -33,14 +33,33 @@ const menuItems = [
   },
 ];
 
+const clickPosition = { x: null, y: null };
+
 function Playlist({ classes, coverUrl, title, description }) {
   const [isContextMenuOpen, setIsContextMenuOpen] = useState(false);
 
+  const contextMenuRef = useRef(null);
+
   const bgClasses = isContextMenuOpen ? 'bg-[#272727]' : 'bg-[#181818] hover:bg-[#272727]';
+
+  function updateContextMenuPosition() {
+    contextMenuRef.current.style.top = `${clickPosition.y}px`;
+    contextMenuRef.current.style.left = `${clickPosition.x}px`;
+  }
+
+  useEffect(() => {
+    if (isContextMenuOpen) {
+      updateContextMenuPosition();
+    }
+  });
 
   /* Открытие меню */
   function openContextMenu(event) {
     event.preventDefault();
+
+    clickPosition.x = event.clientX;
+    clickPosition.y = event.clientY;
+
     setIsContextMenuOpen(true);
   }
 
@@ -62,8 +81,9 @@ function Playlist({ classes, coverUrl, title, description }) {
       <PlaylistDescription description={description} />
       {isContextMenuOpen && (
         <PlaylistContextMenu
+          ref={contextMenuRef}
           menuItems={menuItems}
-          classes="absolute top-9 left-9 bg-[#282828] text-[#eaeaea] text-sm divide-y divide-[#3e3e3e] p-1 rounded shadow-xl cursor-default whitespace-nowrap z-10 "
+          classes="fixed bg-[#282828] text-[#eaeaea] text-sm divide-y divide-[#3e3e3e] p-1 rounded shadow-xl cursor-default whitespace-nowrap z-10 "
           onClose={closeContextMenu}
         />
       )}
