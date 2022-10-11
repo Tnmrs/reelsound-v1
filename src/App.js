@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import TheHeader from './TheHeader';
 import TheSidebar from './TheSidebar';
 import TheMain from './TheMain';
 import TheRegistration from './TheRegistration';
 import TheSidebarOverlay from './TheSidebarOverlay';
 function App() {
+  const contentWrapperRef = useRef(null);
+  let isScrollingEnabled = true;
+
+  function toggleScrolling(isEnabled) {
+    isScrollingEnabled = isEnabled;
+  }
+
+  function handleScrolling(event) {
+    if (isScrollingEnabled) return;
+
+    event.preventDefault();
+    event.stopPropagation();
+  }
+
+  useEffect(() => {
+    const contentWrapper = contentWrapperRef.current;
+    contentWrapper.addEventListener('wheel', handleScrolling);
+
+    return () => contentWrapper.removeEventListener('wheel', handleScrolling);
+  });
   return (
     <>
       {/* Sidebar */}
@@ -13,9 +33,9 @@ function App() {
         <TheSidebar />
         <TheSidebarOverlay />
 
-        <div className="flex-1 overflow-auto">
+        <div className="flex-1 overflow-auto" ref={contentWrapperRef}>
           <TheHeader />
-          <TheMain />
+          <TheMain toggleScrolling={toggleScrolling} />
         </div>
       </div>
 

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useLayoutEffect, useEffect } from 'react';
 import PlaylistButtonPlay from './PlaylistButtonPlay';
 import PlaylistContextMenu from './PlaylistContextMenu';
 import PlaylistCover from './PlaylistCover';
@@ -35,22 +35,65 @@ const menuItems = [
 
 const clickPosition = { x: null, y: null };
 
-function Playlist({ classes, coverUrl, title, description }) {
+function Playlist({ classes, coverUrl, title, description, toggleScrolling }) {
   const [isContextMenuOpen, setIsContextMenuOpen] = useState(false);
 
   const contextMenuRef = useRef(null);
 
   const bgClasses = isContextMenuOpen ? 'bg-[#272727]' : 'bg-[#181818] hover:bg-[#272727]';
 
-  function updateContextMenuPosition() {
-    contextMenuRef.current.style.top = `${clickPosition.y}px`;
-    contextMenuRef.current.style.left = `${clickPosition.x}px`;
+  function updateContextMenuVerticalPosition() {
+    const menuHeight = contextMenuRef.current.offsetsHeight;
+    const shouldMoveUp = menuHeight > window.innerHeight - clickPosition.y;
+
+    contextMenuRef.current.style.top = shouldMoveUp
+      ? `${clickPosition.y - menuHeight}px`
+      : `${clickPosition.y}px`;
   }
 
-  useEffect(() => {
+  function updateContextMenuHorizontalPosition() {
+    const menuWidth = contextMenuRef.current.offsetsWidth;
+    const shouldMoveLeft = menuWidth > window.innerWidth - clickPosition.x;
+
+    contextMenuRef.current.style.left = shouldMoveLeft
+      ? `${clickPosition.x - menuWidth}px`
+      : `${clickPosition.x}px`;
+  }
+
+  function updateContextMenuPosition() {
+    updateContextMenuVerticalPosition();
+    updateContextMenuHorizontalPosition();
+  }
+
+  useLayoutEffect(() => {
+    toggleScrolling(!isContextMenuOpen);
     if (isContextMenuOpen) {
       updateContextMenuPosition();
     }
+  });
+
+  useEffect(() => {
+    if (!isContextMenuOpen) return;
+
+    function handleClickAway(event) {
+      if (!contextMenuRef.current.contains(event.target)) {
+        closeContextMenu();
+      }
+    }
+
+    function handleEsc(event) {
+      if (event.keyCode === 27) {
+        closeContextMenu();
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickAway);
+    document.addEventListener('keydown', handleEsc);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickAway);
+      document.removeEventListener('keydown', handleEsc);
+    };
   });
 
   /* Открытие меню */
@@ -64,7 +107,6 @@ function Playlist({ classes, coverUrl, title, description }) {
   }
 
   function closeContextMenu() {
-    console.log('closeContextMenu');
     setIsContextMenuOpen(false);
   }
   return (
@@ -84,7 +126,6 @@ function Playlist({ classes, coverUrl, title, description }) {
           ref={contextMenuRef}
           menuItems={menuItems}
           classes="fixed bg-[#282828] text-[#eaeaea] text-sm divide-y divide-[#3e3e3e] p-1 rounded shadow-xl cursor-default whitespace-nowrap z-10 "
-          onClose={closeContextMenu}
         />
       )}
     </a>
